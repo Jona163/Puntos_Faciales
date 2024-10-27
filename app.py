@@ -20,3 +20,6 @@ face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1, min_d
 
 def sanitize_filename(filename):
     return re.sub(r'[^a-zA-Z0-9_.-]', '_', filename)
+
+def draw_cross(image, center, size=5, color=(0, 0, 255)):
+    """Dibuja una cruz en la imagen en la posición especificada."""
