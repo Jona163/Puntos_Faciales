@@ -31,3 +31,8 @@ def process_image(image_path):
     image = cv2.imread(image_path)
     rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = face_mesh.process(rgb_image)
+
+    facial_points_dict = {
+        'left_eye_center_x': [None], 'left_eye_center_y': [None],
+        'right_eye_center_x': [None], 'right_eye_center_y': [None],
+        'left_eye_inner_corner_x': [None], 'left_eye_inner_corner_y': [None],
