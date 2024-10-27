@@ -43,3 +43,6 @@ def process_image(image_path):
         'left_eyebrow_outer_end_x': [None], 'left_eyebrow_outer_end_y': [None],
         'right_eyebrow_inner_end_x': [None], 'right_eyebrow_inner_end_y': [None],
         'right_eyebrow_outer_end_x': [None], 'right_eyebrow_outer_end_y': [None],
+        'nose_tip_x': [None], 'nose_tip_y': [None],
+        'mouth_left_corner_x': [None], 'mouth_left_corner_y': [None],
+        'mouth_right_corner_x': [None], 'mouth_right_corner_y': [None],
