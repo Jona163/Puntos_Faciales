@@ -46,3 +46,7 @@ def process_image(image_path):
         'nose_tip_x': [None], 'nose_tip_y': [None],
         'mouth_left_corner_x': [None], 'mouth_left_corner_y': [None],
         'mouth_right_corner_x': [None], 'mouth_right_corner_y': [None],
+        'mouth_center_top_lip_x': [None], 'mouth_center_top_lip_y': [None],
+        'mouth_center_bottom_lip_x': [None], 'mouth_center_bottom_lip_y': [None],
+        'Image': [image_path]
+    }
