@@ -36,3 +36,6 @@ def process_image(image_path):
         'left_eye_center_x': [None], 'left_eye_center_y': [None],
         'right_eye_center_x': [None], 'right_eye_center_y': [None],
         'left_eye_inner_corner_x': [None], 'left_eye_inner_corner_y': [None],
+       'left_eye_outer_corner_x': [None], 'left_eye_outer_corner_y': [None],
+        'right_eye_inner_corner_x': [None], 'right_eye_inner_corner_y': [None],
+        'right_eye_outer_corner_x': [None], 'right_eye_outer_corner_y': [None],
