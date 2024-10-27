@@ -67,3 +67,10 @@ def process_image(image_path):
                 # Obtener coordenadas escaladas
                 x = int(landmark.x * image.shape[1])
                 y = int(landmark.y * image.shape[0])
+
+                # Verificar si el índice está en nuestro mapeo
+                if idx in landmarks_mapping:
+                    key_x = f"{landmarks_mapping[idx]}_x"
+                    key_y = f"{landmarks_mapping[idx]}_y"
+                    facial_points_dict[key_x][0] = x
+                    facial_points_dict[key_y][0] = y
