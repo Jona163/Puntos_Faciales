@@ -26,3 +26,8 @@ def draw_cross(image, center, size=5, color=(0, 0, 255)):
    x, y = center
     cv2.line(image, (x - size, y - size), (x + size, y + size), color, 2)
     cv2.line(image, (x + size, y - size), (x - size, y + size), color, 2)
+
+def process_image(image_path):
+    image = cv2.imread(image_path)
+    rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    results = face_mesh.process(rgb_image)
