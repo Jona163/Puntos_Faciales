@@ -3,6 +3,7 @@
 # Descripción: Graficacion puntos faciales.
 # GitHub: https://github.com/Jona163
 
+#Importaciones requeridas
 import os
 import re
 from flask import Flask, request, render_template, redirect
