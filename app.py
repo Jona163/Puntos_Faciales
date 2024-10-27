@@ -59,3 +59,6 @@ def process_image(image_path):
                130: 'left_eye_outer_corner', 359: 'right_eye_outer_corner',
                 55: 'left_eyebrow_inner_end', 285: 'right_eyebrow_inner_end',
                 105: 'left_eyebrow_outer_end', 334: 'right_eyebrow_outer_end',
+                1: 'nose_tip', 61: 'mouth_left_corner', 291: 'mouth_right_corner',
+                0: 'mouth_center_top_lip', 17: 'mouth_center_bottom_lip'
+            }
