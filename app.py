@@ -81,3 +81,5 @@ def process_image(image_path):
     # Guardar la imagen procesada
     output_image_path = os.path.splitext(image_path)[0] + '_processed.jpeg'
     cv2.imwrite(output_image_path, image)
+
+    return pd.DataFrame(facial_points_dict), output_image_path
