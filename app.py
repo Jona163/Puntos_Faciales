@@ -92,3 +92,12 @@ def index():
         if file.filename == '':
             return redirect(request.url)
         if file:
+            os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+
+            sanitized_filename = sanitize_filename(file.filename)
+            file_path = os.path.join(app.config['UPLOAD_FOLDER'], sanitized_filename)
+            file.save(file_path)
+
+            df_facial_points, processed_image_path = process_image(file_path)
+            output_csv_path = os.path.join(app.config['UPLOAD_FOLDER'], 'facial_points.csv')
+            df_facial_points.to_csv(output_csv_path, index=False)
