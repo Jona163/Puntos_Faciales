@@ -74,3 +74,10 @@ def process_image(image_path):
                     key_y = f"{landmarks_mapping[idx]}_y"
                     facial_points_dict[key_x][0] = x
                     facial_points_dict[key_y][0] = y
+                    
+                    # Dibuja una cruz roja en los puntos seleccionados
+                    draw_cross(image, (x, y))
+
+    # Guardar la imagen procesada
+    output_image_path = os.path.splitext(image_path)[0] + '_processed.jpeg'
+    cv2.imwrite(output_image_path, image)
