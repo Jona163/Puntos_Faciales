@@ -83,3 +83,12 @@ def process_image(image_path):
     cv2.imwrite(output_image_path, image)
 
     return pd.DataFrame(facial_points_dict), output_image_path
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files['file']
+        if file.filename == '':
+            return redirect(request.url)
+        if file:
