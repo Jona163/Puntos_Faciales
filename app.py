@@ -56,3 +56,6 @@ def process_image(image_path):
             landmarks_mapping = {
                 33: 'left_eye_center', 263: 'right_eye_center',
                 133: 'left_eye_inner_corner', 362: 'right_eye_inner_corner',
+               130: 'left_eye_outer_corner', 359: 'right_eye_outer_corner',
+                55: 'left_eyebrow_inner_end', 285: 'right_eyebrow_inner_end',
+                105: 'left_eyebrow_outer_end', 334: 'right_eyebrow_outer_end',
