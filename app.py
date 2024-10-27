@@ -62,3 +62,8 @@ def process_image(image_path):
                 1: 'nose_tip', 61: 'mouth_left_corner', 291: 'mouth_right_corner',
                 0: 'mouth_center_top_lip', 17: 'mouth_center_bottom_lip'
             }
+
+            for idx, landmark in enumerate(face_landmarks.landmark):
+                # Obtener coordenadas escaladas
+                x = int(landmark.x * image.shape[1])
+                y = int(landmark.y * image.shape[0])
