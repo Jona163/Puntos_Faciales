@@ -50,3 +50,9 @@ def process_image(image_path):
         'mouth_center_bottom_lip_x': [None], 'mouth_center_bottom_lip_y': [None],
         'Image': [image_path]
     }
+
+    if results.multi_face_landmarks:
+        for face_landmarks in results.multi_face_landmarks:
+            landmarks_mapping = {
+                33: 'left_eye_center', 263: 'right_eye_center',
+                133: 'left_eye_inner_corner', 362: 'right_eye_inner_corner',
