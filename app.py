@@ -23,3 +23,6 @@ def sanitize_filename(filename):
 
 def draw_cross(image, center, size=5, color=(0, 0, 255)):
     """Dibuja una cruz en la imagen en la posición especificada."""
+   x, y = center
+    cv2.line(image, (x - size, y - size), (x + size, y + size), color, 2)
+    cv2.line(image, (x + size, y - size), (x - size, y + size), color, 2)
